@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://avnadmin:REDACTED@mysql-1a7d050b-qd0420-4b53.l.aivencloud.com:15603/defaultdb?ssl-mode=REQUIRED
-    username: avnadmin
-    password: REDACTED
+    url: jdbc:mysql://${DB_HOST:mysql-1a7d050b-qd0420-4b53.l.aivencloud.com}:${DB_PORT:15603}/${DB_NAME:defaultdb}?ssl-mode=REQUIRED
+    username: ${DB_USERNAME:avnadmin}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       # ddl auto에 대해서 어떻게 설정? : create, create-drop, update
