@@ -6,7 +6,12 @@
 <body>
 <p>메모 조회 및 작성</p>
 
-<%= request.getAttribute("memos") %>
+<p>
+    <%= request.getAttribute("msg") %>
+</p>
+<p>
+    <%= request.getAttribute("memos") %>
+</p>
 
 <form method="post">
     <input name="content" placeholder="메모 내용"><br>
