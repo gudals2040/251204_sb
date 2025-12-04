@@ -12,3 +12,12 @@ spring:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
+
+# Value
+app:
+  msg: '나는 최고의 코틀린 개발자!'
+  skill:
+    - jakarta
+    - javascript
+    - sql
+  year: 2026
